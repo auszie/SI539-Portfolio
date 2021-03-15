@@ -4,7 +4,7 @@ html{
 }
 
 body{
-  background-color: #737372;
+  background-image: url(../images/Mars_landscape.jpg);
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -30,20 +30,21 @@ nav li{
 
 
 nav{
-  background-color: #ddd;
+  background-color: rgb(54, 16, 1);
   padding: 25px 0; 
   text-align: left;
 }
 
 footer{
-  background-color: black;
+  background-color: rgb(54, 16, 1);
   color: white;
   padding-top: 30px;
   text-align: center;
+  position: relative;
 }
 
 header p{
-  color: white;
+  color: rgb(255, 67, 9);
   font-size: 24px;
   padding: 0 100px;
   text-align: center;
@@ -69,7 +70,7 @@ a:hover{
 /*Req 3a*/
 .skip a{
   background: white;
-  left: 0;
+  left: 0;      
   padding: 7px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
@@ -103,7 +104,7 @@ header{
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
-  color: white;
+  color: rgb(54, 16, 1);
   height: 400px;                /* Parallax effect */
     
   margin-bottom: 25px;
@@ -111,7 +112,7 @@ header{
     
   /*Req 6b*/
   /*Set background-image to header.jpg */
-  background-image: url(../images/header.jpg);
+  /*background-image: url(../images/mars_b9ds.jpg);*/
  
 
 }
@@ -156,7 +157,7 @@ header{
 
 /*Req 9*/
 .text{
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(243, 32, 32, 0.8);
   border: 10px solid black;
   padding: 30px;
   align-self: center;
