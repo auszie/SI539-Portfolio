@@ -19,7 +19,7 @@ img {
 h1{
   font-size: 50px;
   line-height: 1;
-  padding: 50px 0;
+  padding: 25px 0;
   text-align: center;
 }
 
@@ -123,6 +123,7 @@ header{
 /*Req 7a*/
 .intro-text, .liftoff-text, .journey-text, .landing-text{
   grid-column: 2 / span 2;
+  text-align: center;
 
 }
 
@@ -131,29 +132,50 @@ header{
   grid-column: 1/-1;
   max-height: 650px;
   overflow: hidden;
+  align-items: center;
 
 }
 
-.intro-image, .intro-text{
+.intro-text{
   grid-row: 1 / span 1;
 }
-
-.lifoff-text, .liftoff-image{
+.intro-image{
   grid-row: 2 / span 1;
+  align-items: center;
+}
+
+.lifoff-text{
+  grid-row: 3 / span 1;
+  
+}
+
+.liftoff-image{
+  grid-row: 4 / span 1;
   
 }
 
 /*Req 7b & 8d*/
-.journey-text, .journey-image{
-  grid-row: 3 / span 1;
+.journey-text{
+  grid-row: 5 / span 1;
+ 
+
+}
+
+.journey-image{
+  grid-row: 6 / span 1;
  
 
 }
 
 /*Req 7b & 8d*/
-.landing-text, .landing-image{
+.landing-text{
  
-  grid-row: 4 / span 1;
+  grid-row: 7 / span 1;
+
+}
+
+.landing-image{
+  grid-row: 8 / span 1;
 
 }
 
@@ -171,6 +193,8 @@ header{
     
   img{
      min-width: 600px;
+     border-style: solid;
+     border-color: whitesmoke;
   }
 
   body{
