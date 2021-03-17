@@ -1,13 +1,19 @@
-/*BEGIN STARTER CSS - DO NOT CHANGE*/
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-  background-image: url(../images/Mars_landscape.jpg);
+  background-color: whitesmoke;
+  /* background-image: url(../images/Mars_landscape.jpg); */
   font-size: 18px;
   margin: 0;
   padding: 0;
+}
+
+img {
+  width: 350px;
+  height: auto;
 }
 
 h1{
@@ -41,10 +47,11 @@ footer{
   padding-top: 30px;
   text-align: center;
   position: relative;
+  bottom: 0;
 }
 
 header p{
-  color: rgb(255, 67, 9);
+  color: rgb(80, 27, 5);
   font-size: 24px;
   padding: 0 100px;
   text-align: center;
@@ -54,14 +61,11 @@ header p{
 
 /*Req 1*/
 nav a{
-  color: black;
+  color: whitesmoke;
   font-weight: bold;
   text-decoration: none;
 
 }
-/*Req 2*/
-/*Write selector/rule property to add an underline when
-links in the navigation are in the hover or focus state.*/
 
 a:hover{
   text-decoration: underline;
@@ -94,7 +98,7 @@ a:hover{
 .container{
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
   grid-row-gap: 20px;
   
 }
@@ -105,7 +109,7 @@ header{
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
   color: rgb(54, 16, 1);
-  height: 400px;                /* Parallax effect */
+  height: 200px;                /* Parallax effect */
     
   margin-bottom: 25px;
   
@@ -117,39 +121,37 @@ header{
 
 }
 /*Req 7a*/
-.about, .method, .client, .contacts{
+.intro-text, .liftoff-text, .journey-text, .landing-text{
   grid-column: 2 / span 2;
 
 }
 
 /*Req 8a, 8b, and 8c*/
-.about-image, .method-image, .client-image, .contact-image{
+.intro-image, .liftoff-image, .journey-image, .landing-image{
   grid-column: 1/-1;
   max-height: 650px;
   overflow: hidden;
 
 }
 
-/*Req 7b & 8d*/
-.about, .about-image{
+.intro-image, .intro-text{
   grid-row: 1 / span 1;
+}
+
+.lifoff-text, .liftoff-image{
+  grid-row: 2 / span 1;
   
 }
 
 /*Req 7b & 8d*/
-.method, .method-image{
-  grid-row: 2 / span 1;
-}
-
-/*Req 7b & 8d*/
-.client, .client-image{
+.journey-text, .journey-image{
   grid-row: 3 / span 1;
  
 
 }
 
 /*Req 7b & 8d*/
-.contacts, .contact-image{
+.landing-text, .landing-image{
  
   grid-row: 4 / span 1;
 
@@ -157,7 +159,7 @@ header{
 
 /*Req 9*/
 .text{
-  background-color: rgba(243, 32, 32, 0.8);
+  background-color: whitesmoke;
   border: 10px solid black;
   padding: 30px;
   align-self: center;
@@ -168,13 +170,24 @@ header{
 @media all and (min-width: 880px){
     
   img{
-     width:100%;
+     min-width: 600px;
+  }
+
+  body{
+    background-image: url(../images/Mars_landscape.jpg);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
   }
     
   /*Req 10*/
   nav{
     padding: 30px 0px;
-    text-align: right;
+    text-align: center;
+  }
+
+  nav a{
+    color: whitesmoke;
   }
 
   /*Req 11*/
@@ -184,12 +197,12 @@ header{
   }
 
   /*Req 12*/
-  .about, .client, .method-image, .contact-image{
+  .intro-text, .liftoff-text, .journey-text, .landing-text{
     grid-column: 3 / span 2;
   }
 
   /*Req 13*/
-  .about-image, .client-image, .method, .contacts{
+  .intro-image, .liftoff-image, .journey-image, .landing-image{
     grid-column: 2 / span 2;
   }
 }
