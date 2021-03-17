@@ -40,9 +40,9 @@
       </ul>
       </nav>
   
-      <h1>People Who Made It All Possible</h1>
+      <h1>Experience Mars Perseverance in VR</h1>
       <main>
-        <iframe src="vr.html" height="500" width="500"></iframe>i-fra
+
 
       </main>
         
@@ -52,10 +52,10 @@
 		    <a-asset-item id="rover" src="models/Perseverance.glb" crossorigins></a-asset-item>
       </a-assets>
       
-         <a-entity id="env" environment="preset: forest" shadow="true"></a-entity>
+         <a-entity id="env" environment="preset: yavapai" shadow="true"></a-entity>
       
          <a-entity id="camera-rig">
-            <a-camera id="camera">
+            <a-camera id="camera" position=".5 .5 -.5">
               <a-cursor color="black" fuse="true" animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1" animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"></a-cursor>
             </a-camera>
           </a-entity>
