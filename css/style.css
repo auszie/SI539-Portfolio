@@ -4,7 +4,7 @@ html{
 }
 
 body{
-  background-color: whitesmoke;
+  background-color: rgb(255, 236, 220);
   /* background-image: url(../images/Mars_landscape.jpg); */
   font-size: 18px;
   margin: 0;
@@ -12,9 +12,10 @@ body{
 }
 
 img {
-  width: 300px;
+  width: 85%;
   height: auto;
-  justify-content: center;
+  border: 5px solid  rgb(54, 16, 1);
+  
 }
 
 h1{
@@ -27,6 +28,8 @@ h1{
 h2{
   font-size: 32px;
   line-height: 1.5;
+  padding-bottom: 5px;
+  color: rgb(54, 16, 1);
 }
 
 nav li{
@@ -52,10 +55,13 @@ footer{
   align-items: center;
 }
 
+footer p{
+  color: whitesmoke;
+}
+
 header p{
   color: rgb(80, 27, 5);
-  font-size: 24px;
-  padding: 0 100px;
+  font-size: 32px;
   text-align: center;
 }
 /*END STARTER CSS - DO NO CHANGE*/
@@ -101,7 +107,7 @@ a:hover{
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto;
-  grid-row-gap: 20px;
+  grid-row-gap: 10px;
   justify-content: center;
   
 }
@@ -112,32 +118,22 @@ header{
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
   color: rgb(54, 16, 1);
-  height: 200px;                /* Parallax effect */
-    
+  height: 20%;                /* Parallax effect */
   margin-bottom: 25px;
-  
-    
-  /*Req 6b*/
-  /*Set background-image to header.jpg */
-  /*background-image: url(../images/mars_b9ds.jpg);*/
- 
-
 }
-/*Req 7a*/
-.intro-text, .liftoff-text, .journey-text, .landing-text{
+
+.intro-text, .liftoff-text, .journey-text, .landing-text, .about-text, .sensor-text{
   grid-column: 2 / span 2;
   text-align: center;
   align-items: center;
-
 }
 
 /*Req 8a, 8b, and 8c*/
-.intro-image, .liftoff-image, .journey-image, .landing-image{
+.intro-image, .liftoff-image, .journey-image, .landing-image, .about-image{
   grid-column: 1/-1;
   max-height: 650px;
   overflow: hidden;
   text-align: center;
-
 }
 
 .intro-text{
@@ -150,48 +146,72 @@ header{
 
 .lifoff-text{
   grid-row: 3 / span 1;
-  
 }
 
 .liftoff-image{
   grid-row: 4 / span 1;
-  
 }
 
 /*Req 7b & 8d*/
 .journey-text{
   grid-row: 5 / span 1;
- 
-
 }
 
 .journey-image{
   grid-row: 6 / span 1;
- 
-
 }
 
 /*Req 7b & 8d*/
 .landing-text{
- 
   grid-row: 7 / span 1;
-
 }
 
 .landing-image{
   grid-row: 8 / span 1;
-
+  padding-bottom: 10px;
 }
 
-/*Req 9*/
 .text{
   background-color: whitesmoke;
   border: 10px solid black;
-  padding: 30px;
+  width: 85%;
   align-self: center;
-
 }
 
+.about-text{
+  grid-row: 1 / span 1;
+  padding-top: 5%;
+}
+
+.about-image{
+  grid-row: 2 / span 1;
+  padding-bottom: -20px;
+}
+
+.sensor-text{
+  grid-row: 3 / span 1;
+  padding-bottom: 10px;
+}
+
+.sensor-list{
+  display: inline;
+  background-color: none;
+  text-align: left;
+  width: 80%;
+  padding: none;
+}
+
+
+.img1{
+  width: 95%;
+  height: auto;
+  border: 5px solid  rgb(54, 16, 1);
+}
+
+p{
+  font-size: 22px;
+  color: rgb(80, 27, 5);
+}
 
 @media all and (min-width: 880px){
     
@@ -208,7 +228,6 @@ header{
     padding: 0;
   }
     
-  /*Req 10*/
   nav{
     padding: 30px 0px;
     text-align: center;
@@ -218,18 +237,18 @@ header{
     color: whitesmoke;
   }
 
-  /*Req 11*/
+
   .container{
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 400px 425px 425px 400px;
   }
 
-  /*Req 12*/
+  
   .intro-text, .liftoff-text, .journey-text, .landing-text{
     grid-column: 3 / span 2;
   }
 
-  /*Req 13*/
+  
   .intro-image, .liftoff-image, .journey-image, .landing-image{
     grid-column: 2 / span 2;
   }
@@ -241,20 +260,14 @@ header{
 }
 
 
-
-/*You do not need to modify any code below this line.
-It is included for accessibility to turn off animations
-and movement for people who have modified their 
-preferences to reduce motion.*/
-
 @media screen and (prefers-reduced-motion: reduce){
   html{
-      scroll-behavior: auto; /* Removes scroll animation */
+      scroll-behavior: auto; 
   }
 
   .skip a{
-    -webkit-transition: none; /* sets to default setting */
-    transition: none;        /* sets to default setting */
+    -webkit-transition: none; 
+    transition: none;        
    }
 
   /*Turn off parallax*/
