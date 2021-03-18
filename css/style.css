@@ -12,9 +12,9 @@ body{
 }
 
 img {
-  width: 350px;
+  width: 300px;
   height: auto;
-  align-items: center;
+  justify-content: center;
 }
 
 h1{
@@ -39,16 +39,17 @@ nav li{
 nav{
   background-color: rgb(54, 16, 1);
   padding: 25px 0; 
-  text-align: left;
+  text-align: center;
 }
 
 footer{
   background-color: rgb(54, 16, 1);
   color: white;
-  padding-top: 30px;
+  padding-top: 15px;
   text-align: center;
   position: relative;
   bottom: 0;
+  align-items: center;
 }
 
 header p{
@@ -101,6 +102,7 @@ a:hover{
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto;
   grid-row-gap: 20px;
+  justify-content: center;
   
 }
 
@@ -125,6 +127,7 @@ header{
 .intro-text, .liftoff-text, .journey-text, .landing-text{
   grid-column: 2 / span 2;
   text-align: center;
+  align-items: center;
 
 }
 
@@ -133,7 +136,7 @@ header{
   grid-column: 1/-1;
   max-height: 650px;
   overflow: hidden;
-  align-items: center;
+  text-align: center;
 
 }
 
@@ -142,7 +145,7 @@ header{
 }
 .intro-image{
   grid-row: 2 / span 1;
-  align-items: center;
+  justify-content: center;
 }
 
 .lifoff-text{
@@ -229,6 +232,11 @@ header{
   /*Req 13*/
   .intro-image, .liftoff-image, .journey-image, .landing-image{
     grid-column: 2 / span 2;
+  }
+
+  footer{
+    text-align: right;
+    
   }
 }
 
