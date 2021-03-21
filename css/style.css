@@ -5,14 +5,13 @@ html{
 
 body{
   background-color: rgb(252, 240, 231);
-  /* background-image: url(../images/Mars_landscape.jpg); */
   font-size: 18px;
   margin: 0;
   padding: 0;
 }
 
 img {
-  width: 85%;
+  width: 80%;
   height: auto;
   border: 5px solid  rgb(54, 16, 1);
   
@@ -131,8 +130,6 @@ header{
 /*Req 8a, 8b, and 8c*/
 .intro-image, .liftoff-image, .journey-image, .landing-image, .about-image, .sensor-images{
   grid-column: 1/-1;
-  /* max-height: 650px; */
-  overflow: hidden;
   text-align: center;
 }
 
@@ -206,9 +203,12 @@ header{
   padding: none;
 }
 
+/*About page css*/
+
+
 
 .img1{
-  width: 95%;
+  width: 80%;
   height: auto;
   border: 5px solid  rgb(54, 16, 1);
 }
@@ -225,10 +225,115 @@ p{
   color: rgb(80, 27, 5);
 }
 
+.main_img:hover{
+  width: 85%;
+  height: auto;
+  filter: brightness(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* css specific for people*/
+
+.diana{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: centers;
+
+}
+
+.mission-team, .celebration{
+  display: flex;
+  justify-content: center;
+}
+
+.diana img{
+  width: 45%;
+  border: 3px solid black;
+}
+
+.people-body{
+  background-image: url(../images/nasa_logo2.jpg);
+  background-color: rgb(11, 61, 145);
+  background-size: 15%;
+  background-repeat: repeat;
+}
+
+.people-nav{
+  background-color: rgb(11, 61, 145);
+  color: white;
+}
+.people-footer{
+  background-color: rgb(11, 61, 145);
+}
+.mission-team img, .celebration img{
+  display: block;
+  width: 85%;
+  border: 3.5px solid black;
+  margin: 10px;
+}
+
+.people-text1{
+  text-align: center;
+  border: 5px solid black;
+  margin: 20px;
+}
+
+.people-text1 p, .diana p{
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.diana h2, .people-text1 h2{
+  color: white;
+
+}
+.people-text1{
+  color: black;
+  background-color: rgb(11, 61, 145);
+}
+
+.diana{
+  background-color: rgb(11, 61, 145);
+  border: 5px solid black;
+  margin: 20px;
+}
+
+h3{
+  color: white;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.people-text1 h3 a{
+  color: white;
+  text-decoration: none;
+}
+
+h3:hover{
+  text-decoration: underline;
+}
+
+
+
+.diana{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.diana img{
+  margin: 1%;
+}
+
 @media all and (min-width: 880px){
     
   img{
-     width: 70%;
+     width: 60%;
      border-style: solid;
      border-color: whitesmoke;
   }
@@ -274,6 +379,8 @@ p{
     text-align: right;
   
   }
+
+
 }
 
 
