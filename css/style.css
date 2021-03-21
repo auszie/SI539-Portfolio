@@ -354,10 +354,6 @@ h3:hover{
     color: whitesmoke;
   }
 
-  body{
-    border: 3px solid black
-  }
-
 
   .container{
     grid-template-columns: 50px auto 500px auto 50px;
