@@ -270,6 +270,7 @@ p{
 .mission-team img, .celebration img{
   display: block;
   width: 85%;
+  height: auto;
   border: 3.5px solid black;
   margin: 10px;
 }
