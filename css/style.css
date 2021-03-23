@@ -286,11 +286,14 @@ p{
 }
 
 .mission-team img, .celebration img{
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
   width: 85%;
   height: auto
   border: 3.5px solid black;
-  
-  
+
 }
 
 .people-text1{
