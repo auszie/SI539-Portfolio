@@ -279,7 +279,9 @@ p{
 }
 
 .mission-team, .celebration{
-  margin: 10px 10px auto auto;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mission-team img, .celebration img{
