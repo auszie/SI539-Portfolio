@@ -4,7 +4,12 @@ html{
 }
 
 body{
-  background-color: rgb(252, 240, 231);
+  /* background-color: rgb(252, 240, 231); */
+  background-image: url(../images/Mars_landscape.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -255,6 +260,10 @@ p{
 
 .people-body{
   background-image: url(../images/nasa_logo2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgb(11, 61, 145);
   background-size: 15%;
   background-repeat: repeat;
@@ -341,6 +350,10 @@ h3:hover{
 
   body{
     background-image: url(../images/Mars_landscape.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 18px;
     margin: 0;
     padding: 0;
