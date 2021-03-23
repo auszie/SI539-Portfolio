@@ -12,41 +12,9 @@
 	  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js"></script>
-    <script>
-      AFRAME.registerComponent('cursor-listener', {
-        init: function () {
-          var lastIndex = -1;
-          var COLORS = [ 'black','lightblue'];
-          this.el.addEventListener('click', function (evt) {
-            lastIndex = (lastIndex + 1) % COLORS.length;
-            this.setAttribute('material', 'color', COLORS[lastIndex]);
-            console.log('I was clicked at: ', evt.detail.intersection.point);
-          });
-          }
-      });
-    </script>
-
-
-  </head>
-  <body>
-    <header>
-      <nav>
-      <ul>
-          <li><a href="index.html">Home</a></li>
-              <li><a href="people.html">People</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="vr.html">Explore in VR</a></li>
-      </ul>
-      </nav>
-  
-      <h1>Experience Mars Perseverance in VR</h1>
-      <main>
-
-
-      </main>
-        
+    
     </header>
-    <a-scene embedded>
+    <a-scene >
      <a-assets>
 		    <a-asset-item id="rover" src="models/Perseverance.glb" crossorigins></a-asset-item>
       </a-assets>
@@ -54,8 +22,8 @@
          <a-entity id="env" environment="preset: yavapai" shadow="true"></a-entity>
       
          <a-entity id="camera-rig">
-            <a-camera id="camera" position=".5 .5 -.5">
-              <a-cursor color="black" fuse="true" animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1" animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1" animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"></a-cursor>
+            <a-camera id="camera" position="0 1 0">
+              <a-entity camera position="0 1 0" wasd-controls look-controls></a-entity>
             </a-camera>
           </a-entity>
 
@@ -63,10 +31,6 @@
           
           <a-entity gltf-model="#rover" position="0 0 0" scale=".4 .4 .4" rotation="0 125 0"></a-entity>
     </a-scene>
-
-    <footer>
-      <p>Austin Zielinski &copy; 2021</p>
-    </footer>
   </body>
 </html>
 
