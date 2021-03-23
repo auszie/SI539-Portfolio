@@ -340,6 +340,26 @@ h3:hover{
   margin: 1%;
 }
 
+/*Animation changing the background*/
+
+#homepage{
+  animation-name: animateSectionBackground;
+  animation-duration: 5s;
+}
+
+@keyframes animateSectionBackground {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+/* 
+@keyframes animateSectionBackground {
+  00%, 24% { background-image: url(/images/rocket-launch.jpg); }
+  25%, 49% { background-image: url(/images/rocket-leaving-earth.jpg); }
+  50%, 74% { background-image: url(/images/arriving-at-mars.jpg); }
+  75%, 99% { background-image: url(/images/Mars_landscape.jpg); }
+} */
+
+
 @media all and (min-width: 880px){
     
   img{
