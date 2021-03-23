@@ -1,13 +1,29 @@
+<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <script src="/js/https.js"></script>
     <title>AR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://rawgit.com/Utopiah/googlepoly-load-component/master/googlepoly-load-component.js"></script>
-    <style> .a-enter-vr-button { display: none; } </style>
-  </head>
-  <body>
+    <style>
+        .a-enter-vr-button {
+            display: none;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NDL2VJ68P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2NDL2VJ68P');
+    </script>
+</head>
+
+<body>
     <a-scene background="color: black">
         <a-assets>
             <a-asset-item id="rover" src="models/Perseverance.glb" crossorigins></a-asset-item>
@@ -17,5 +33,6 @@
 
         <a-entity camera position="0 1 0" wasd-controls look-controls></a-entity>
     </a-scene>
-  </body>
+</body>
+
 </html>
