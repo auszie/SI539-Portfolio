@@ -297,6 +297,10 @@ p{
   margin-right: auto;
 } */
 
+#people_h1{
+  color: white;
+}
+
 .mission-team img, .celebration img{
   display: block;
   margin: 10px;
