@@ -191,8 +191,8 @@ header{
 
 .sensor-images{
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .sensor-text{
@@ -219,8 +219,8 @@ header{
 }
 
 .img2{
-  width: 40%;
-  
+  max-width: 140px;
+  height: auto;
   border: 5px solid  rgb(54, 16, 1);
   margin: 3%;
 }
