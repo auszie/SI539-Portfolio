@@ -191,7 +191,7 @@ header{
 
 .sensor-images{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
