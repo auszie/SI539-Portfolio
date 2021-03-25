@@ -190,9 +190,13 @@ header{
 }
 
 .sensor-images{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: auto
+  border: 3.5px solid black;
 }
 
 .sensor-text{
