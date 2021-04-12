@@ -242,10 +242,6 @@ header{
   margin-left: 30px;
 }
 
-.sensor-list p{
-  width: 35%;
-}
-
 /*About page css*/
 
 
@@ -468,7 +464,7 @@ h3:hover{
 }
 
 
-#XR_p{
+.XR_p{
 
   margin-top: 15px;
   margin-bottom: 5px;
@@ -537,7 +533,7 @@ h3:hover{
     margin-left: 25px;
   }
 
-  #XR_a:hover{
+  .XR_a:hover{
     text-decoration: none;
     font-size: 60px;
   }
