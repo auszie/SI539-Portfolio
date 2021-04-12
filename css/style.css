@@ -147,7 +147,7 @@ header{
   text-align: center;
   align-items: center;
   backdrop-filter: blur(3px) contrast(.7);
-  background-color: rgba(54, 16, 1, 0.308);
+  background-color: rgba(54, 16, 1, 0.2);
   border-radius: 5px;
 }
 
@@ -336,7 +336,8 @@ p{
 } */
 
 #people_h1{
-  background-color: rgb(11, 61, 145);
+  backdrop-filter: blur(3px) contrast(.7);
+  background-color: rgba(11, 61, 145, .9);
   border: 5px solid black;
   margin: 20px;
   color: white;
@@ -376,12 +377,14 @@ p{
 }
 .people-text1{
   color: black;
-  background-color: rgb(11, 61, 145);
+  backdrop-filter: blur(3px) contrast(.7);
+  background-color: rgba(11, 61, 145, .95);
   border-radius: 10px;
 }
 
 .diana{
-  background-color: rgb(11, 61, 145);
+  backdrop-filter: blur(3px) contrast(.7);
+  background-color: rgba(11, 61, 145, .95);
   border: 5px solid black;
   margin: 20px;
   border-radius: 10px;
@@ -552,7 +555,7 @@ h3:hover{
 
   .container{
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr 1;
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-row-gap: 10px;
     justify-content: center;
@@ -569,7 +572,7 @@ h3:hover{
   }
 
    .liftoff-image, .landing-image{
-    grid-column: 2/ span 3;
+    grid-column: 3/ span 3;
     text-align: center;
   }
 
@@ -584,6 +587,41 @@ h3:hover{
     width: 45%;
   }
 
+  nav li{
+    display: flex;
+    box-direction: column;
+    justify-content: right;
+  }
+
+  nav{
+    margin-left: 80%;
+    padding: 5px;
+    background: none;
+  }
+
+  .people-nav{
+    background: none;
+    backdrop-filter: blur(7px) contrast(.9);
+    background-color: rgba(11, 61, 145, .02);
+    border-radius: 5px;
+
+  }
+
+  .people-nav a{
+    color: black;
+  }
+
+  nav a{
+    font-size: 23px;
+  }
+  .current{
+    font-size:25px;
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
+  .intro-text, .liftoff-text, .journey-text, .landing-text, .about-text, .sensor-text{
+  grid-column: 2 / span 3;
 }
 
 @media all and (min-width: 1025px){
@@ -627,7 +665,7 @@ h3:hover{
 
   
   .intro-image, .liftoff-image, .journey-image, .landing-image{
-    grid-column: 2 / span 2;
+    grid-column: 3 / span 2;
   }
 
   footer{
