@@ -351,7 +351,7 @@ header{
   padding: none;
   color: whitesmoke;
   justify-content: center;
-  background-color: rgba(54, 16, 1, 0.308);
+  background-color: rgba(54, 16, 1, 0.2);
 }
 
 .sensor-list li{
@@ -518,6 +518,15 @@ p{
 }
 
 h3{
+  font-size: 28px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75%;
+  background-color: rgba(54, 16, 1, 0.1);
   color: whitesmoke;
   padding-bottom: 10px;
   text-decoration: none;
@@ -1063,11 +1072,25 @@ h3:hover{
   #sensor1, #sensor2, #sensor3{
     grid-row: 1 / span 1;
   }
-  
-  
-  
+
   #sensor4, #sensor5, #sensor6 {
     grid-row: 2 / span 1;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  h3{
+    font-size: 43px;
+  }
+
+  p {
+    font-size: 40px;
   }
 
 }
