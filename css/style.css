@@ -255,6 +255,7 @@ header{
   border-radius: 5px;
 }
 .sensor-text{
+  background-color: rgba(54, 16, 1, 0.308);
   grid-column: 1/ -1;
 }
 
@@ -1018,7 +1019,7 @@ h3:hover{
   }
 
   img{
-    width: 30%;
+    width: 35S%;
   }
 
   .sensor-text{
