@@ -1112,6 +1112,6 @@ h3:hover{
 
   /*Turn off parallax*/
   header{
-    background-attachment: initial;
+    background-attachment: fixed;
   }
 }
