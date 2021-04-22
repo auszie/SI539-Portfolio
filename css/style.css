@@ -41,7 +41,7 @@ h2{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 30%;
+  width: 75%;
   background-color: rgba(54, 16, 1, 0.1);
 }
 
@@ -198,6 +198,43 @@ li{
   
 }
 
+.sensors{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: auto auto auto auto auto auto;
+  grid-row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#sensor, #sensor2, #sensor3, #sensor4, #sensor5, #sensor6{
+  grid-column: 1 / span 1;
+}
+
+#sensor1{
+  grid-row: 1 / span 1;
+}
+
+#sensor2{
+  grid-row: 2 / span 1;
+}
+
+#sensor3{
+  grid-row: 3 / span 1;
+}
+
+#sensor4{
+  grid-row: 4 / span 1;
+}
+
+#sensor5{
+  grid-row: 5 / span 1;
+}
+
+#sensor6{
+  grid-row: 6 / span 1;
+}
+
 header{
   
   background-attachment: fixed; /* Parallax effect */     
@@ -208,7 +245,7 @@ header{
   margin-bottom: 25px;
 }
 
-.intro-text, .liftoff-text, .journey-text, .landing-text, .about-text, .sensor-text{
+.intro-text, .liftoff-text, .journey-text, .landing-text, .about-text{
   grid-column: 2 / span 2;
   text-align: center;
   align-items: center;
@@ -217,6 +254,10 @@ header{
   background-color: rgba(54, 16, 1, 0.2);
   border-radius: 5px;
 }
+.sensor-text{
+  grid-column: 1/ -1;
+}
+
 
 /*Req 8a, 8b, and 8c*/
 .intro-image, .liftoff-image, .journey-image, .landing-image, .about-image, .about-images, .sensor-images{
@@ -767,6 +808,52 @@ h3:hover{
     margin-left: 0px;
     width: 90%;
   }
+
+  .sensors{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #sensor1, #sensor3, #sensor5{
+    grid-column: 2 / span 1;
+    width: 300px;
+  }
+
+ #sensor2, #sensor4, #sensor6{
+    grid-column: 3 / span 1;
+    width: 300px;
+  }
+  
+  #sensor1{
+    grid-row: 1 / span 1;
+  }
+  
+  #sensor2{
+    grid-row: 1 / span 1;
+  }
+  
+  #sensor3{
+    grid-row: 2 / span 1;
+  }
+  
+  #sensor4{
+    grid-row: 2 / span 1;
+  }
+  
+  #sensor5{
+    grid-row: 3 / span 1;
+  }
+  
+  #sensor6{
+    grid-row: 3 / span 1;
+  }
+
 }
 
 
@@ -930,6 +1017,10 @@ h3:hover{
   
   }
 
+  img{
+    width: 30%;
+  }
+
   .sensor-text{
     grid-column: 2 / span 3;
   }
@@ -940,6 +1031,42 @@ h3:hover{
 
   .container1{
     margin-left: 5%;
+  }
+
+  .sensors{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #sensor1, #sensor4{
+    grid-column: 2 / span 1;
+    width: 300px;
+  }
+  #sensor2, #sensor5{
+    grid-column: 3 / span 1;
+    width: 300px;
+  }
+
+
+ #sensor3, #sensor6{
+    grid-column: 4 / span 1;
+    width: 300px;
+  }
+  
+  #sensor1, #sensor2, #sensor3{
+    grid-row: 1 / span 1;
+  }
+  
+  
+  
+  #sensor4, #sensor5, #sensor6 {
+    grid-row: 2 / span 1;
   }
 
 }
