@@ -42,20 +42,21 @@ h2{
 }
 
 nav li{
-  display:inline;
+  display:inline-flex;
   padding-right:20px;
+  padding-bottom: 10px;
 
 }
 
 
 nav{
-  background-color: rgba(54, 16, 1, 0.2);
-  padding: 25px 0; 
+  background-color: rgba(54, 16, 1, 0.1);
+  padding: 10px 5px; 
   text-align: center;
 }
 
 footer{
-  background-color: rgba(54, 16, 1, 0.2);
+  background-color: rgba(153, 86, 60, 0.1);
   color: whitesmoke;
   padding-top: 15px;
   text-align: center;
@@ -78,10 +79,79 @@ header p{
 
 /*Req 1*/
 nav a{
+  font-size: 105%;
   color: whitesmoke;
   font-weight: bold;
   text-decoration: none;
-}             
+}
+
+/* form {
+  border: 3px solid #f1f1f1;
+} */
+
+.container1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10%;
+  width: 80%;
+}
+
+legend{ 
+  font-size: 125%;
+  font-style:italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label{
+  margin-left: 10px;
+  margin-right:10px;
+  margin-top: 3px;
+  font-size: 25px;
+  color: whitesmoke;
+  background-color: rgba(255, 255, 255, .2);
+  text-align: center;
+}
+input {
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 10pxS;
+  margin-left: 10px;
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: rgba(54, 16, 1, .3);
+}
+
+textarea{
+  margin: 10px 8px;
+  padding-top: 5px;
+  min-height: 60px;
+  background-color: rgba(54, 16, 1, .3);
+  color: whitesmoke;
+  width: 100%;
+}
+
+
+input[type=checkbox]{
+
+}
+#submission{
+  margin-right: 0px;
+}
+
+input[type=submit] {
+  background-color: rgba(54, 16, 1, 1);
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
 
 a:hover{
   text-decoration: underline;
@@ -124,21 +194,12 @@ li{
   
 }
 
-.container{
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr 3fr 1;
-  grid-template-rows: auto auto auto auto auto auto auto auto;
-  grid-row-gap: 10px;
-  justify-content: center;
-}
-
 header{
   
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
-      ;
   height: 20%;                /* Parallax effect */
   margin-bottom: 25px;
 }
@@ -147,13 +208,14 @@ header{
   grid-column: 2 / span 2;
   text-align: center;
   align-items: center;
+  justify-content: center;
   backdrop-filter: blur(3px) contrast(.7);
   background-color: rgba(54, 16, 1, 0.2);
   border-radius: 5px;
 }
 
 /*Req 8a, 8b, and 8c*/
-.intro-image, .liftoff-image, .journey-image, .landing-image, .about-image, .sensor-images{
+.intro-image, .liftoff-image, .journey-image, .landing-image, .about-image, .about-images, .sensor-images{
   grid-column: 1/-1;
   text-align: center;
 }
@@ -208,18 +270,23 @@ header{
   padding-bottom: -20px;
 }
 
+.about-images{
+  grid-row: 2 / span 1;
+  padding-bottom: -20px;
+}
+
 .sensor-images{
   display: flex;
   margin: 10px;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 60%;
   height: auto
 }
 
  .current{
-  font-size: 115%;
+  font-size: 125%;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -231,12 +298,14 @@ header{
 
 
 .sensor-list{
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: none;
   text-align: left;
-  width: 65%;
   padding: none;
   color: whitesmoke;
+  justify-content: center;
 }
 
 .sensor-list li{
@@ -264,10 +333,11 @@ header{
 }
 
 .img3{
-  width: auto;
-  height: 300px;
+  width: 300px;
+  height: auto;
   border-radius: 10px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
@@ -323,7 +393,7 @@ p{
 
 .people-nav{
   backdrop-filter: blur(3px) contrast(.7);
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .people-nav a{
@@ -521,6 +591,26 @@ h3:hover{
 } */
 
 @media (min-width: 768px) and (max-width: 1024px){
+ 
+  /* For the form */
+ 
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+  
+  label{
+    font-size: 32px;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
 
   .ar, .vr{
     display: flex;
@@ -530,8 +620,8 @@ h3:hover{
     margin: 10px;
   }
   
-  .people-nav{
-    color: black;
+  .people-nav a{
+    background-color: rgba(255, 255, 255, .7);
   }
   
   #XR_img{
@@ -546,8 +636,8 @@ h3:hover{
 
   #XR_img1{
     margin-right: 15px;
-    width: 250px;
-    height: auto;
+    width: auto;
+    height: 275px;
     margin-left: 25px;
   }
 
@@ -626,17 +716,20 @@ h3:hover{
 
   }
 
-  .people-nav a{
-    color: black;
-  }
+ 
 
   nav a{
+    background-color: rgba(255, 255, 255, .2);
     font-size: 32px;
     color: whitesmoke;
   }
   
   a:visited {
     color: whitesmoke;
+  }
+
+  .people-nav a{
+    color: black;
   }
 
   .current{
@@ -649,16 +742,44 @@ h3:hover{
   grid-column: 2 / span 3;
 }
 
-@media all and (min-width: 1025px){
+.img3{
+  width: 500px;
+}
+
+.container1{
+  margin-left: 2%;
+  width: 100%;
+}
+  label{
+    margin-left: 0px;
+  }
+
+  input{
+    margin-left: 0px;
+    width: 90%;
+  }
+
+  textarea{
+    margin-left: 0px;
+    width: 90%;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
     
+  .container1{
+    align-items: flex-start;
+    margin-left: 10%;
+  }
+
   img{
-     width: 60%;
+     width: 30%;
      border-style: solid;
-     border-color: whitesmoke;
+     border-color:5px solid rgb(54, 16, 1);
   }
 
   body{
-    background-color: black;
     background-image: url(../images/Mars_landscape.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -669,34 +790,141 @@ h3:hover{
     padding: 0;
   }
     
+  nav li{
+    display: inline;
+  
+  }
+
   nav{
-    background-color:rgba(0, 0, 0, 100);
-    padding: 30px 0px;
-    text-align: center;
+    margin-left: 3%;
+    text-align: left;
+    padding: 5px;
+    background: none;
+  }
+
+
+  .people-nav{
+    background: none;
+    backdrop-filter: blur(7px) contrast(.9);
+    background-color: rgba(11, 61, 145, .02);
+    border-radius: 5px;
+
+  }
+
+ 
+
+  nav a{
+    background-color: rgba(255, 255, 255, .2);
+    font-size: 42px;
+    color: whitesmoke;
+  }
+  
+  a:visited {
+    color: whitesmoke;
+  }
+
+  .people-nav a{
+    color: black;
+  }
+
+  .current{
+    font-size: 54px;
+    font-weight: 900;
+    text-decoration: underline;
   }
 
 
 
   .container{
-    grid-template-columns: 50px auto 500px auto 50px;
-    grid-template-rows: 400px 425px 425px 400px;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
   }
 
   
   .intro-text, .liftoff-text, .journey-text, .landing-text{
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 3;
   }
 
-  
-  .intro-image, .liftoff-image, .journey-image, .landing-image{
-    grid-column: 3 / span 2;
-  }
 
   footer{
     text-align: right;
   
   }
 
+  .intro-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .journey-image{
+    display: flex;
+
+  }
+
+  .diana img{
+    width: 45%;
+  }
+
+  .diana{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .celebration img, .mission-team img{
+    width: 60%;
+    
+  }
+
+  .main_img:hover{
+    width:31%;
+  }
+
+  .sensor-list{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .journey-image{
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .about-image{
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .landing-image{
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .about-text{
+    grid-column: 2 / span 3;
+  }
+
+  .img1{
+    width: 40%;
+  }
+
+  .about-images{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .img3{
+    width: 700px;
+  
+  }
+
+  .sensor-text{
+    grid-column: 2 / span 3;
+  }
 
 }
 
