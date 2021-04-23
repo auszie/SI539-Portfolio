@@ -348,7 +348,7 @@ li{
 }
 
  .current{
-  font-size: 125%;
+  font-size: 200%;
   font-weight: 900;
   text-decoration: underline;
 }
@@ -804,7 +804,7 @@ h3:hover{
   }
 
   .current{
-    font-size:42px;
+    font-size:50px;
     font-weight: 900;
     text-decoration: underline;
   }
