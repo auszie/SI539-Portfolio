@@ -1154,4 +1154,8 @@ h3:hover{
   body{
     background-attachment: initial;
   }
+
+  .people-body{
+    background-attachment: initial;
+  }
 }
