@@ -42,7 +42,7 @@ h2{
   margin-right: auto;
   text-align: center;
   width: 75%;
-  background-color: rgba(54, 16, 1, 0.1);
+  color: rgb(110, 43, 17);
 }
 
 nav li{
@@ -153,7 +153,7 @@ input[type=checkbox]{
 
 input[type=submit] {
   background-color: rgba(54, 16, 1, 1);
-  color: white;
+  color: whitesmoke;
   cursor: pointer;
 }
 
@@ -167,6 +167,10 @@ a:hover{
 
 #skipC{
   color: black;
+}
+
+.background1{
+  background-color: rgba(54, 16, 1, 0.2)
 }
 
 /*Req 3a*/
@@ -307,6 +311,10 @@ li{
   padding-bottom: 10px;
 }
 
+.backgroundremove{
+  background-color: none;
+}
+
 .text{
   background-color: whitesmoke;
   border: 10px solid black;
@@ -317,6 +325,7 @@ li{
 .about-text{
   grid-row: 1 / span 1;
 }
+
 
 .about-image{
   grid-row: 2 / span 1;
@@ -534,7 +543,6 @@ h3{
   margin-right: auto;
   text-align: center;
   width: 75%;
-  background-color: rgba(54, 16, 1, 0.1);
   color: whitesmoke;
   padding-bottom: 10px;
   text-decoration: none;
@@ -801,7 +809,7 @@ h3:hover{
     text-decoration: underline;
   }
 
-  .intro-text, .liftoff-text, .journey-text, .landing-text, .about-text, .sensor-text{
+  .intro-text, .liftoff-text, .journey-text, .landing-text, .about-text, .sensor-text, .about-text1{
   grid-column: 2 / span 3;
 }
 
