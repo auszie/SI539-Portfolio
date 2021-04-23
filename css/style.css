@@ -54,7 +54,7 @@ nav li{
 
 
 nav{
-  background-color: rgba(54, 16, 1, 0.1);
+  background-color: rgba(54, 16, 1, 0.2);
   padding: 10px 5px; 
   text-align: center;
 }
@@ -114,7 +114,7 @@ label{
   margin-top: 3px;
   font-size: 25px;
   color: whitesmoke;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(54, 16, 1, 0.2);
   text-align: center;
 }
 input {
@@ -165,10 +165,14 @@ a:hover{
   text-decoration: underline;
 }
 
+#skipC{
+  color: black;
+}
+
 /*Req 3a*/
 .skip a{
   background: whitesmoke;
-  color: color: rgb(54, 16, 1);
+  color: rgba(54, 16, 1, 1);
   left: 0;      
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
@@ -868,6 +872,26 @@ h3:hover{
     grid-row: 3 / span 1;
   }
 
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3{
+    font-size: 37px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  body{
+    font-size: 25px;
+  }
+
 }
 
 
@@ -923,7 +947,7 @@ h3:hover{
  
 
   nav a{
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .1);
     font-size: 42px;
     color: whitesmoke;
   }
